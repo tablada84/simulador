@@ -1,4 +1,4 @@
-// 🏪 Super MarketSports
+/*// 🏪 Super MarketSports
 
 alert("Bienvenido/a a Super MarketSports 🏄‍♂️🚴‍♀️");
 
@@ -83,4 +83,4 @@ if (carrito.length > 0) {
   alert(`El total a pagar es: $${total}`);
 } else {
   alert("No realizó ninguna compra. ¡Vuelva pronto!");
-}
+}*/
