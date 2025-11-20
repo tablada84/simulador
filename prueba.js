@@ -4,7 +4,7 @@
 
 //alert("beinvenido/a a super marketsports")
 
-const productos =[
+/*const productos =[
   { id: 1, nombre: "tabla de surf",precio: 500, },
   { id: 2, nombre: "casco",precio: 100, },
    { id: 3,nombre: "bike",precio: 200, },
@@ -106,4 +106,4 @@ alert(`el total a pagar por su compra es: $ ${total}`);
 const mayorCosto = carrito.filter((el) => el.precio > 500);
 console.log(
   `El valor mayor de precios de producto comprado es: ${mayorCosto[0].precio} `
-);
+);*/

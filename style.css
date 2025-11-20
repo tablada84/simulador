@@ -1,0 +1,276 @@
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.modo-contenedor{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.413);
+    gap: 50px;
+    padding: 20px;
+}
+body{
+    height: 1500px;
+}
+
+.shop-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;/*
+
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 100px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+.card:hover{
+    translate: 0 -10px;
+    box-shadow: 0 10px 5px rgba(255, 255, 255, 0.413);
+}
+
+.card > img{
+    width: 90%;
+    height: 150px;
+}
+
+.card .comprar{
+    border:none;
+    outline: 0;
+    padding: 12px;
+    margin: 0%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    font-size: 12px;
+}
+
+.modo-contenedor .price{
+ color: rgb(253, 252, 252);
+  font-size: 20px;
+}
+
+.shop-content> .modo-contenedor{
+     display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+.shop-content>div>img {
+  height: 80px;
+  width: 80px;
+
+  text-align: center;
+}
+.price{
+    color: black;
+    font-size: 22px;
+}
+.card-button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card-button:hover{
+    opacity: 0.7;
+}
+
+.ver-carrito{
+font-size: 25px;
+margin-right: 20px;
+margin-top: 3.5vh;
+cursor: pointer;
+}
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  background-image: url(./img/alex-perez-LlwHorAMpFo-unsplash.jpg);
+}
+.banner-container {
+  text-align: center;
+  padding: 15% 0;
+}
+
+.modoHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 100%;
+}*/
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    min-height: 1500px;
+}
+
+/* CONTENEDORES */
+.modo-contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.413);
+    gap: 50px;
+    padding: 20px;
+}
+
+.shop-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 80px 0 80px;
+}
+
+/* TARJETAS */
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 100px;
+    margin: auto;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+.card > img {
+    width: 90%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-button,
+.card .comprar {
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+}
+
+.card-button:hover,
+.card .comprar:hover {
+    opacity: 0.7;
+}
+
+/* PRECIOS */
+.price {
+    color: black;
+    font-size: 22px;
+}
+
+.modo-contenedor .price {
+    color: white;
+    font-size: 20px;
+}
+
+/* SHOP ITEM DENTRO DE shop-content */
+.shop-content > .modo-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.shop-content > div > img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    text-align: center;
+}
+
+/* HEADER */
+.modoHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+/* ICONO CARRITO */
+.ver-carrito {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+
+/* BANNER */
+.banner {
+    height: 50vh;
+    width: 100%;
+    background-image: url(./img/alex-perez-LlwHorAMpFo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-container {
+    text-align: center;
+    padding: 15% 0;
+}
+
+.modo-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.modo-header-title {
+  justify-self: start;
+}
+
+.modo-header-button {
+  cursor: pointer;
+}
+.cantidad-carrito {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  position: absolute;
+  display: none;
+}
+
