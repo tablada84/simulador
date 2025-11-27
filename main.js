@@ -35,7 +35,7 @@ cantidad:1,
 },
 ]
 
-let carrito = []
+let carrito = JSON.parse(localStorage.getItem("carrito")) ||[]
 
 productos.forEach((product)=>{
     let content = document.createElement("div")
@@ -72,8 +72,18 @@ if(repetir){
         img:product.img,
         cantidad:product.cantidad,
     })
-}
+
     console.log(carrito)
+    console.log(carrito.length)
     carritoCounter();
+    saveLocal()
+}
 })
 })
+
+const saveLocal=()=>{ 
+
+localStorage.setItem("carrito", JSON.stringify(carrito))
+}
+
+JSON.parse(localStorage.getItem("carrito"))

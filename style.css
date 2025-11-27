@@ -238,7 +238,7 @@ body {
 .banner {
     height: 50vh;
     width: 100%;
-    background-image: url(./img/alex-perez-LlwHorAMpFo-unsplash.jpg);
+   background-color: rgb(66, 63, 63);
     background-size: cover;
     background-position: center;
 }
@@ -274,3 +274,65 @@ body {
   display: none;
 }
 
+form {
+  background: rgba(255, 255, 255, 0.2);
+  width: 450px;
+  border-radius: 25px;
+  height: 400px;
+  padding: 25px;
+  box-sizing: border-box;
+  margin: 50px auto 50px;
+  box-shadow: 5px 5px 5px 5px rgb(10, 8, 8);
+}
+
+form h1 {
+  color: rgb(50, 46, 46);
+  text-align: center;
+  font-size: 22px;
+}
+
+label {
+  color: rgb(58, 56, 56);
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  display: inline-block;
+}
+input,
+textarea {
+  box-sizing: border-box;
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  outline: none;
+  resize: 50px;
+}
+
+textarea {
+  height: 50px;
+}
+
+#button-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  flex-grow: 1;
+  width: 125px;
+  margin: 15px;
+  border: none;
+  outline: none;
+
+  height: 35px;
+  cursor: pointer;
+  color: rgb(251, 255, 255);
+}
+
+button#send {
+  background: rgb(9, 5, 5);
+}
+
+button#reset {
+  background: black;
+}
