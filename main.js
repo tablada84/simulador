@@ -41,10 +41,47 @@ const getProducts= async()=>{
 
     const response = await fetch("data.json");
     const data = await response.json()
-    console.log(data)
-}
+   data.forEach((product)=>{
+    let content = document.createElement("div")
+    content.className = "card"
+    content.innerHTML = `
+    <img src = "${product.img}"
+    <h3>${product.nombre}</h3>
+    <p class="price">$${product.precio}</p>`
 
-productos.forEach((product)=>{
+    shopContent.append(content)
+
+let Comprar = document.createElement("button")
+Comprar.innerText = "comprar"
+Comprar.className = "comprar"
+
+content.append(Comprar)
+
+Comprar.addEventListener("click", ()=>{
+  Comprar.addEventListener("click", () => {
+
+    const repetir = carrito.some((repetirProduct) => repetirProduct.id === product.id);
+    repetir ? carrito.map((prod) => prod.id === product.id && prod.cantidad++) : carrito.push({
+      id: product.id,
+      img: product.img,
+      nombre: product.nombre,
+      precio: product.precio,
+      cantidad: product.cantidad,
+      title: product.title,
+    });
+
+
+    console.log(carrito)
+    console.log(carrito.length)
+    carritoCounter();
+    saveLocal()
+})
+})
+})
+
+}
+getProducts()
+data.forEach((product)=>{
     let content = document.createElement("div")
     content.className = "card"
     content.innerHTML = `
