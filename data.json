@@ -1,0 +1,31 @@
+[
+    {
+    
+"nombre": "tabla de surf",
+"precio":500,
+"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4zlE1jNTh43gz7F1-1Wxx3NuqbqydM0SIg&u",
+"id":1,
+"cantidad":1
+},
+{
+"nombre": "bmx",
+"precio":500,
+"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4zlE1jNTh43gz7F1-1Wxx3NuqbqydM0SIg&u",
+"id":2,
+"cantidad":1
+},
+{ 
+"nombre": "scatebord",
+"precio":500,
+"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRTtP-Nuh5uoHlEVKiw-8wAP8xQ_c8v3ulyg&us",
+"id":3,
+"cantidad":1
+},
+{ 
+"nombre": "roller",
+"precio":500,
+"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHooAFq7Gnu-HlN35uzrNeGW5scJpePeWYUA&us",
+"id":4,
+"cantidad":1
+}
+]

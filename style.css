@@ -135,26 +135,36 @@ body {
 }
 
 /* CONTENEDORES */
-.modo-contenedor {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.413);
-    gap: 50px;
-    padding: 20px;
-}
-
 .shop-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 30px 80px 0 80px;
+    background-color: rgba(208, 203, 203, 0.413);
+    gap: 50px;
+    padding: 20px;
+}
+
+
+.modo-contenedor {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: aliceblue;
+  background-color: rgb(5, 4, 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
 }
 
 /* TARJETAS */
 .card {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    max-width: 100px;
+    max-width: 600px;
     margin: auto;
     text-align: center;
     font-family: "Courier New", Courier, monospace;
@@ -167,8 +177,8 @@ body {
 }
 
 .card > img {
-    width: 90%;
-    height: 150px;
+    width: 100%;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -181,7 +191,7 @@ body {
     background-color: black;
     text-align: center;
     cursor: pointer;
-    width: 100%;
+    width: 290px;
     font-size: 14px;
 }
 
@@ -238,7 +248,7 @@ body {
 .banner {
     height: 50vh;
     width: 100%;
-   background-color: rgb(66, 63, 63);
+   background-color: rgb(143, 135, 135);
     background-size: cover;
     background-position: center;
 }
@@ -319,7 +329,7 @@ textarea {
 
 button {
   flex-grow: 1;
-  width: 125px;
+  width: 105px;
   margin: 15px;
   border: none;
   outline: none;
@@ -335,4 +345,22 @@ button#send {
 
 button#reset {
   background: black;
+}
+.Finalizar-Compra {
+  background-color: rgb(188, 178, 178);
+  color: aliceblue;
+  border-radius: 0%;
+  font-size: 12px;
+  padding: 10px;
+  top: 35px;
+  cursor: pointer;
+}
+.Vaciar {
+  background-color: rgb(206, 45, 58);
+  color: aliceblue;
+  border-radius: 0%;
+  font-size: 12px;
+  padding: 10px;
+  top: 35px;
+  cursor: pointer;
 }
