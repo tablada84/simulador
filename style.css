@@ -248,7 +248,7 @@ body {
 .banner {
     height: 50vh;
     width: 100%;
-    background-image: url(https://unsplash.com/es/fotos/un-skater-realiza-un-truco-en-un-skatepark-de-hormigon-Bvt12wnIewo;); 
+    background:rgb(161, 141, 144);
     background-size: cover;
     background-position: center;
 }
