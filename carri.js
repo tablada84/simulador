@@ -62,7 +62,7 @@ carrito.forEach((product)=>{
     let eliminar = document.createElement("span")
 
     eliminar.className = "delete-product";
-    eliminar.innerHTML = "𝗑"
+    eliminar.innerHTML = "🗑️"
    
     carritoContent.append(eliminar)
 
