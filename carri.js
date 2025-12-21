@@ -92,7 +92,7 @@ let finalizarComprar = document.createElement("button");
   modoContenedor.append(vaciarCarrito)
   vaciarCarrito.addEventListener("click", () => {
     carrito = [];
-    shopContenido.innerHTML=""
+    modoContenedor.innerHTML=""
     carritoCounter()
     Swal.fire({
 
@@ -110,7 +110,7 @@ let finalizarComprar = document.createElement("button");
 
       title: "Gracias por su compra!!",
       text: "Esperamos por otra vuelta!!",
-      footer: '<a href="#">Extreme Market</a>'
+      footer: '<a href="#">The best</a>'
     });;
 
   });
