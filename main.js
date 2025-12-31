@@ -15,7 +15,7 @@ cantidad:1,
 },
 {nombre: "bmx",
 precio:500,
-img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4zlE1jNTh43gz7F1-1Wxx3NuqbqydM0SIg&u",
+img:"https://m.media-amazon.com/images/I/812uhyQISnL._AC_SL1500_.jpg",
 id:2,
 cantidad:1,
 },
@@ -51,7 +51,9 @@ const getProducts= async()=>{
     content.innerHTML = `
     <img src = "${product.img}"
     <h3>${product.nombre}</h3>
-    <p class="price">$${product.precio}</p>`
+    <p class="price">$${product.precio}</p>
+     <p>Cantidad: ${product.cantidad}</p>
+ `
 
     shopContent.append(content)
 

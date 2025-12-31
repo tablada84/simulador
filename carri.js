@@ -14,10 +14,12 @@ modoContenedor.append(modoHeader)
 
 const modoButton = document.createElement("h1")
 
-modoButton.innerText="x"
+modoButton.innerText="X"
 modoButton.className =`"modo-button-header"`;
 
 modoHeader.append(modoButton)
+
+
 modoButton.addEventListener("click", ()=>{
     modoContenedor.style.display = "none"
 })

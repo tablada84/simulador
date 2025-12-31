@@ -228,7 +228,7 @@ body {
 }
 
 /* HEADER */
-.modoHeader {
+.modo-header {
     display: flex;
     justify-content: space-between;
     background-color: black;
@@ -258,19 +258,13 @@ body {
     padding: 15% 0;
 }
 
-.modo-header {
-  display: flex;
-  justify-content: space-around;
-  background-color: black;
-  color: white;
-  width: 100%;
-}
+
 
 .modo-header-title {
   justify-self: start;
 }
 
-.modo-header-button {
+.modo-button-header {
   cursor: pointer;
 }
 .cantidad-carrito {
@@ -346,14 +340,18 @@ button#send {
 button#reset {
   background: black;
 }
+
+.modo-content .price{
+   color: rgb(253, 252, 252);
+  font-size: 20px;
+}
 .Finalizar-Compra {
   background-color: rgb(188, 178, 178);
   color: aliceblue;
-  border-radius: 0%;
   font-size: 12px;
   padding: 10px;
-  top: 35px;
   cursor: pointer;
+  height: 50px;
 }
 .Vaciar {
   background-color: rgb(206, 45, 58);
@@ -362,5 +360,24 @@ button#reset {
   font-size: 12px;
   padding: 10px;
   top: 35px;
+  cursor: pointer;
+}
+.sumar {
+  background-color: rgb(206, 45, 58);
+  color: aliceblue;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 35px;
+  cursor: pointer;
+}
+
+.restar {
+  background-color: rgb(201, 36, 50);
+  color: aliceblue;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 38px;
   cursor: pointer;
 }
